@@ -1,6 +1,8 @@
+# General Comments about makeCacheMatrix and cacheSolve:
 # makeCacheMatrix creates a special "matrix" object that can cache its inverse
 # cacheSolve computes the inverse of the special "matrix" object returned by makeCacheMatrix.
-# If the inverse has been calculated, cacheSolve retrieves it from the cache
+# If the inverse has been calculated, cacheSolve retrieves it from the cache.
+# Example:
 # > a <- matrix(runif(9), nrow=3, ncol=4)       //creates a matrix "a"
 # > ca <- makeCacheMatrix(a)                    //creates a special matrix object "ca"
 # > ca$get()                                    //returns the matrix object "ca"
